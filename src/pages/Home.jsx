@@ -12,7 +12,7 @@ export default function Home() {
   const handleVideoPlay = () => {
     toast({
       title: "🚧 Esta función no está implementada aún",
-      description: "¡Pero no te preocupes! Puedes solicitarla en tu próximo prompt! 🚀"
+      description: "¡Pero no te preocupes! Algun día la implementaremos!😈🚀"
     });
   };
 
