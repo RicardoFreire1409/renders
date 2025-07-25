@@ -42,6 +42,8 @@ export default function Services() {
       <Helmet>
         <title>Servicios - Estudio Altamar</title>
         <meta name="description" content="Servicios de grabación, mezcla y masterización. Planes desde $15/hora o suscripción mensual por $30. Equipos profesionales en Guayaquil." />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4379704162931477"
+     crossorigin="anonymous"></script>
       </Helmet>
 
       <div className="pt-16">
