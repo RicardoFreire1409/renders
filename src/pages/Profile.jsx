@@ -84,6 +84,8 @@ export default function Profile() {
       <Helmet>
         <title>Mi Perfil - Estudio Altamar</title>
         <meta name="description" content="Gestiona tu cuenta, revisa tu historial de reservas, administra tu suscripción y configura tu galería de artista en Estudio Altamar." />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4379704162931477"
+     crossorigin="anonymous"></script>
       </Helmet>
 
       <div className="pt-16 min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800">
