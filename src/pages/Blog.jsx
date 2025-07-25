@@ -125,6 +125,8 @@ export default function Blog() {
       <Helmet>
         <title>Blog - Estudio Altamar</title>
         <meta name="description" content="Tips de producción musical, tutoriales de grabación, entrevistas con artistas y las últimas tendencias de la industria musical en Ecuador." />
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4379704162931477"
+     crossorigin="anonymous"></script>
       </Helmet>
 
       <div className="pt-16">
