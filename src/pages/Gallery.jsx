@@ -114,6 +114,8 @@ export default function Gallery() {
       <Helmet>
         <title>Galería de Artistas - Estudio Altamar</title>
         <meta name="description" content="Descubre artistas independientes que han grabado en Estudio Altamar. Escucha sus trabajos y conecta con la escena musical de Guayaquil." />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4379704162931477"
+     crossorigin="anonymous"></script>
       </Helmet>
 
       <div className="pt-16">
