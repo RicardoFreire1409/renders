@@ -66,6 +66,8 @@ export default function Booking() {
       <Helmet>
         <title>Reservar Sesión - Estudio Altamar</title>
         <meta name="description" content="Reserva tu sesión de grabación en Estudio Altamar. Calendario en tiempo real, múltiples servicios disponibles desde $15/hora." />
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4379704162931477"
+     crossorigin="anonymous"></script>
       </Helmet>
 
       <div className="pt-16 min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800">
