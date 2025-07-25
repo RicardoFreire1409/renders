@@ -60,6 +60,8 @@ export default function About() {
       <Helmet>
         <title>Sobre Nosotros - Estudio Altamar</title>
         <meta name="description" content="Conoce la historia de Estudio Altamar, nuestro equipo y nuestra misión de apoyar a músicos independientes en Guayaquil con servicios profesionales de grabación." />
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4379704162931477"
+     crossorigin="anonymous"></script>
       </Helmet>
 
       <div className="pt-16">
