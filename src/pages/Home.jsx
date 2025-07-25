@@ -65,6 +65,8 @@ export default function Home() {
       <Helmet>
         <title>RENDERS - Grabación Profesional en Guayaquil</title>
         <meta name="description" content="Conecta con músicos independientes. Reserva sesiones de grabación, mezcla y masterización desde $15/hora. Calidad profesional, precios independientes." />
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4379704162931477"
+     crossorigin="anonymous"></script>
       </Helmet>
 
       <div className="pt-16">
