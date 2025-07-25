@@ -92,6 +92,8 @@ export default function Contact() {
       <Helmet>
         <title>Contacto - Estudio Altamar</title>
         <meta name="description" content="Contacta con Estudio Altamar. Teléfono, email, ubicación y horarios. Resuelve tus dudas sobre servicios de grabación en Guayaquil." />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4379704162931477"
+     crossorigin="anonymous"></script>
       </Helmet>
 
       <div className="pt-16">
