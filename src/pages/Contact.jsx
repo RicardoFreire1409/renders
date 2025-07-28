@@ -26,7 +26,7 @@ export default function Contact() {
     e.preventDefault();
     toast({
       title: "🚧 Esta función no está implementada aún",
-      description: "¡Pero no te preocupes! Puedes solicitarla en tu próximo prompt! 🚀"
+      description: "¡Pero no te preocupes! Proximamente estará disponible"
     });
   };
 
@@ -41,19 +41,19 @@ export default function Contact() {
     {
       icon: <Phone className="h-6 w-6" />,
       title: "Teléfono",
-      details: ["+593 99 123 4567", "+593 4 234 5678"],
+      details: ["+593 98 796 4247", "+593 98 796 4247"],
       description: "Llámanos para consultas inmediatas"
     },
     {
       icon: <Mail className="h-6 w-6" />,
       title: "Email",
-      details: ["info@estudioaltamar.com", "reservas@estudioaltamar.com"],
+      details: ["jorftama@espol.edu.ec"],
       description: "Escríbenos para información detallada"
     },
     {
       icon: <MapPin className="h-6 w-6" />,
       title: "Ubicación",
-      details: ["Av. 9 de Octubre y García Moreno", "Edificio Altamar, Piso 3"],
+      details: [""],
       description: "Guayaquil, Ecuador"
     },
     {
