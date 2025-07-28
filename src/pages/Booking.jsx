@@ -28,9 +28,7 @@ export default function Booking() {
 
   const producers = [
     { id: 'none', name: 'Sin productor', price: 0 },
-    { id: 'carlos', name: 'Carlos Mendoza', price: 10, specialty: 'Rock/Pop' },
-    { id: 'maria', name: 'María González', price: 15, specialty: 'Electrónica/Hip-Hop' },
-    { id: 'luis', name: 'Luis Ramírez', price: 12, specialty: 'Folk/Acústico' }
+    { id: 'productor', name: 'Con productor', price: 15, specialty: 'Rock/Pop' },
   ];
 
   const handleBooking = () => {
