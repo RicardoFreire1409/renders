@@ -30,13 +30,13 @@ export default function Navbar() {
             <img
               src="/logo-light.png"
               alt="Renders Logo Dark"
-              className="h-12 w-auto dark:hidden"
+              className="h-20 w-auto dark:hidden"
             />
             {/* Logo claro → se ve en modo oscuro */}
             <img
               src="/logo-dark.png"
               alt="Renders Logo Light"
-              className="h-12 w-auto hidden dark:block"
+              className="h-20 w-auto hidden dark:block"
             />
           </Link>
 
