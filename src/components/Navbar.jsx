@@ -28,13 +28,13 @@ export default function Navbar() {
           <Link to="/" className="flex items-center space-x-3">
             {/* Logo oscuro → se ve en modo claro */}
             <img
-              src="/logo-dark.png"
+              src="/logo-light.png"
               alt="Renders Logo Dark"
               className="h-12 w-auto dark:hidden"
             />
             {/* Logo claro → se ve en modo oscuro */}
             <img
-              src="/logo-light.png"
+              src="/logo-dark.png"
               alt="Renders Logo Light"
               className="h-12 w-auto hidden dark:block"
             />
