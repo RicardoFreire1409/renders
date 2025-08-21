@@ -41,6 +41,7 @@ export default function Navbar() {
             {navItems.map(item => <Link key={item.path} to={item.path} className={`text-sm font-medium transition-colors hover:text-teal-400 ${location.pathname === item.path ? 'text-teal-400' : 'text-gray-300'}`}>
                 {item.name}
               </Link>)}
+            <ThemeToggle />
             <Link to="/perfil">
               <Button variant="outline" size="sm" className="border-teal-500 text-teal-400 hover:bg-teal-500 hover:text-black">
                 <User className="h-4 w-4 mr-2" />
