@@ -9,8 +9,8 @@ import Booking from '@/pages/Booking';
 import Gallery from '@/pages/Gallery';
 import About from '@/pages/About';
 // import Blog from '@/pages/Blog'; // si luego lo habilitas, quita el comentario
-import Contact from '@/pages/Contact';
-// import Profile from '@/pages/Profile'; // si luego lo habilitas, quita el comentario
+//import Contact from '@/pages/Contact';
+import Profile from '@/pages/Profile'; // si luego lo habilitas, quita el comentario
 
 // Si tu ThemeToggle usa next-themes, descomenta esto y envuelve la app con ThemeProvider.
 // import { ThemeProvider } from 'next-themes';
