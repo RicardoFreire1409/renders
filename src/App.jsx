@@ -24,9 +24,9 @@ function App() {
             <Route path="/reservar" element={<Booking />} />
             <Route path="/galeria" element={<Gallery />} />
             <Route path="/sobre-nosotros" element={<About />} />
-            <Route path="/blog" element={<Blog />} />
+            <!-- <Route path="/blog" element={<Blog />} /> -->
             <Route path="/contacto" element={<Contact />} />
-            <Route path="/perfil" element={<Profile />} />
+            <!--<Route path="/perfil" element={<Profile />} />-->
           </Routes>
         </main>
         <Footer />
