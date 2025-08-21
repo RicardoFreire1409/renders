@@ -15,8 +15,8 @@ export default function Navbar() {
     { name: 'Reservar', path: '/reservar' },
     { name: 'Galería', path: '/galeria' },
     { name: 'Sobre Nosotros', path: '/sobre-nosotros' },
-    { name: 'Blog', path: '/blog' },
-    { name: 'Contacto', path: '/contacto' },
+  //  { name: 'Blog', path: '/blog' },
+   // { name: 'Contacto', path: '/contacto' },
   ];
 
   return (
