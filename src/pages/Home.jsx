@@ -64,16 +64,22 @@ export default function Home() {
     <>
       <Helmet>
         <title>RENDERS - Grabación Profesional en Guayaquil</title>
-        <meta name="description" content="Conecta con músicos independientes. Reserva sesiones de grabación, mezcla y masterización desde $15/hora. Calidad profesional, precios independientes." />
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4379704162931477"
-     crossorigin="anonymous"></script>
+        <meta
+          name="description"
+          content="Conecta con músicos independientes. Reserva sesiones de grabación, mezcla y masterización desde $15/hora. Calidad profesional, precios independientes."
+        />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4379704162931477"
+          crossOrigin="anonymous"
+        ></script>
       </Helmet>
 
-      <div className="pt-16">
+      <div className="pt-16 transition-colors duration-300">
         {/* Hero Section */}
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-teal-900/20 via-black to-coral-900/20"></div>
-          
+          <div className="absolute inset-0 bg-gradient-to-br from-teal-900/10 via-white dark:via-black to-coral-900/10 transition-colors"></div>
+
           {/* Background Pattern */}
           <div className="absolute inset-0 opacity-10">
             <div className="absolute top-20 left-10 w-32 h-32 border border-teal-400 rounded-full"></div>
@@ -82,22 +88,19 @@ export default function Home() {
           </div>
 
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
+            <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 text-slate-900 dark:text-white transition-colors">
                 <span className="bg-gradient-to-r from-teal-400 to-coral-400 bg-clip-text text-transparent">
                   Calidad de estudio,
                 </span>
                 <br />
-                <span className="text-white">precios independientes</span>
+                <span className="text-slate-900 dark:text-white">precios independientes</span>
               </h1>
-              
-              <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-                Reserva sesiones de grabación, mezcla y masterización desde <span className="text-teal-400 font-bold">$15/hora</span> 
-                o suscríbete por <span className="text-coral-400 font-bold">$30/mes</span>
+
+              <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-slate-700 dark:text-gray-300 transition-colors">
+                Reserva sesiones desde{" "}
+                <span className="text-teal-600 dark:text-teal-400 font-bold">$15/hora</span> o suscríbete por{" "}
+                <span className="text-coral-600 dark:text-coral-400 font-bold">$30/mes</span>
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -107,12 +110,12 @@ export default function Home() {
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </Link>
-                
-                <Button 
-                  variant="outline" 
-                  size="lg" 
+
+                <Button
+                  variant="outline"
+                  size="lg"
                   onClick={handleVideoPlay}
-                  className="border-coral-400 text-coral-400 hover:bg-coral-400 hover:text-black px-8 py-4 text-lg"
+                  className="border-coral-400 text-coral-600 dark:text-coral-400 hover:bg-coral-400 hover:text-black px-8 py-4 text-lg"
                 >
                   <Play className="mr-2 h-5 w-5" />
                   Ver Estudio
@@ -127,12 +130,13 @@ export default function Home() {
                 className="relative max-w-4xl mx-auto"
               >
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-teal-500/30">
-                  <img  
-                    className="w-full h-64 md:h-96 object-cover" 
+                  <img
+                    className="w-full h-64 md:h-96 object-cover"
                     alt="Estudio de grabación profesional con equipos modernos"
-                   src="https://images.unsplash.com/photo-1559732277-7453b141e3a1" />
+                    src="https://images.unsplash.com/photo-1559732277-7453b141e3a1"
+                  />
                   <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                    <button 
+                    <button
                       onClick={handleVideoPlay}
                       className="bg-white/20 backdrop-blur-sm rounded-full p-6 hover:bg-white/30 transition-all"
                     >
@@ -148,16 +152,11 @@ export default function Home() {
         {/* Features Section */}
         <section className="py-20 bg-gradient-to-b from-white to-gray-100 dark:from-black dark:to-gray-900 transition-colors">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-center mb-16"
-            >
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                Sin barreras: <span className="text-teal-400">todos los géneros, todos los niveles</span>
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-900 dark:text-white transition-colors">
+                Sin barreras: <span className="text-teal-600 dark:text-teal-400">todos los géneros, todos los niveles</span>
               </h2>
-              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              <p className="text-xl max-w-3xl mx-auto text-slate-700 dark:text-gray-300 transition-colors">
                 Desde amateur hasta semi-pro, te ofrecemos el espacio y las herramientas para crear tu mejor música
               </p>
             </motion.div>
@@ -169,13 +168,11 @@ export default function Home() {
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl border border-teal-500/20 hover:border-teal-500/40 transition-all group"
+                  className="bg-gradient-to-br from-gray-100 to-white dark:from-gray-800 dark:to-gray-900 p-6 rounded-2xl border border-teal-500/20 hover:border-teal-500/40 transition-colors group"
                 >
-                  <div className="text-teal-400 mb-4 group-hover:scale-110 transition-transform">
-                    {feature.icon}
-                  </div>
-                  <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
-                  <p className="text-gray-400">{feature.description}</p>
+                  <div className="text-teal-600 dark:text-teal-400 mb-4 group-hover:scale-110 transition-transform">{feature.icon}</div>
+                  <h3 className="text-xl font-bold mb-3 text-slate-900 dark:text-white transition-colors">{feature.title}</h3>
+                  <p className="text-slate-600 dark:text-gray-400 transition-colors">{feature.description}</p>
                 </motion.div>
               ))}
             </div>
@@ -185,14 +182,9 @@ export default function Home() {
         {/* Pricing Preview */}
         <section className="py-20 bg-gradient-to-b from-white to-gray-100 dark:from-black dark:to-gray-900 transition-colors">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-center mb-16"
-            >
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                Elige tu <span className="text-coral-400">plan perfecto</span>
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-900 dark:text-white transition-colors">
+                Elige tu <span className="text-coral-600 dark:text-coral-400">plan perfecto</span>
               </h2>
             </motion.div>
 
@@ -202,30 +194,25 @@ export default function Home() {
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
-                className="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-teal-500/30"
+                className="bg-gradient-to-br from-gray-100 to-white dark:from-gray-800 dark:to-gray-900 p-8 rounded-2xl border border-teal-500/30 transition-colors"
               >
                 <div className="text-center">
-                  <h3 className="text-2xl font-bold text-white mb-4">Por Hora</h3>
-                  <div className="text-5xl font-bold text-teal-400 mb-2">$15</div>
-                  <p className="text-gray-400 mb-6">por hora</p>
+                  <h3 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white transition-colors">Por Hora</h3>
+                  <div className="text-5xl font-bold mb-2 text-teal-600 dark:text-teal-400">$15</div>
+                  <p className="mb-6 text-slate-600 dark:text-gray-400">por hora</p>
                   <ul className="space-y-3 text-left mb-8">
-                    <li className="flex items-center text-gray-300">
-                      <Music2 className="h-5 w-5 text-teal-400 mr-3" />
-                      Acceso completo al estudio
+                    <li className="flex items-center text-slate-700 dark:text-gray-300">
+                      <Music2 className="h-5 w-5 text-teal-600 dark:text-teal-400 mr-3" /> Acceso completo al estudio
                     </li>
-                    <li className="flex items-center text-gray-300">
-                      <Music2 className="h-5 w-5 text-teal-400 mr-3" />
-                      Equipos profesionales
+                    <li className="flex items-center text-slate-700 dark:text-gray-300">
+                      <Music2 className="h-5 w-5 text-teal-600 dark:text-teal-400 mr-3" /> Equipos profesionales
                     </li>
-                    <li className="flex items-center text-gray-300">
-                      <Music2 className="h-5 w-5 text-teal-400 mr-3" />
-                      Uso autónomo o con productor
+                    <li className="flex items-center text-slate-700 dark:text-gray-300">
+                      <Music2 className="h-5 w-5 text-teal-600 dark:text-teal-400 mr-3" /> Uso autónomo o con productor
                     </li>
                   </ul>
                   <Link to="/servicios">
-                    <Button className="w-full bg-teal-500 hover:bg-teal-600 text-white">
-                      Ver Detalles
-                    </Button>
+                    <Button className="w-full bg-teal-500 hover:bg-teal-600 text-white">Ver Detalles</Button>
                   </Link>
                 </div>
               </motion.div>
@@ -235,39 +222,31 @@ export default function Home() {
                 initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
-                className="bg-gradient-to-br from-coral-600/20 to-coral-800/20 p-8 rounded-2xl border border-coral-500/50 relative"
+                className="bg-gradient-to-br from-coral-100 to-white dark:from-coral-600/20 dark:to-coral-800/20 p-8 rounded-2xl border border-coral-500/50 relative transition-colors"
               >
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-coral-500 text-black px-4 py-2 rounded-full text-sm font-bold">
-                    MÁS POPULAR
-                  </span>
+                  <span className="bg-coral-500 text-black px-4 py-2 rounded-full text-sm font-bold">MÁS POPULAR</span>
                 </div>
                 <div className="text-center">
-                  <h3 className="text-2xl font-bold text-white mb-4">Suscripción</h3>
-                  <div className="text-5xl font-bold text-coral-400 mb-2">$30</div>
-                  <p className="text-gray-400 mb-6">por mes</p>
+                  <h3 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white">Suscripción</h3>
+                  <div className="text-5xl font-bold mb-2 text-coral-600 dark:text-coral-400">$30</div>
+                  <p className="mb-6 text-slate-600 dark:text-gray-400">por mes</p>
                   <ul className="space-y-3 text-left mb-8">
-                    <li className="flex items-center text-gray-300">
-                      <Music2 className="h-5 w-5 text-coral-400 mr-3" />
-                      Horas ilimitadas
+                    <li className="flex items-center text-slate-700 dark:text-gray-300">
+                      <Music2 className="h-5 w-5 text-coral-600 dark:text-coral-400 mr-3" /> Horas ilimitadas
                     </li>
-                    <li className="flex items-center text-gray-300">
-                      <Music2 className="h-5 w-5 text-coral-400 mr-3" />
-                      Prioridad en reservas
+                    <li className="flex items-center text-slate-700 dark:text-gray-300">
+                      <Music2 className="h-5 w-5 text-coral-600 dark:text-coral-400 mr-3" /> Prioridad en reservas
                     </li>
-                    <li className="flex items-center text-gray-300">
-                      <Music2 className="h-5 w-5 text-coral-400 mr-3" />
-                      Galería de artista
+                    <li className="flex items-center text-slate-700 dark:text-gray-300">
+                      <Music2 className="h-5 w-5 text-coral-600 dark:text-coral-400 mr-3" /> Galería de artista
                     </li>
-                    <li className="flex items-center text-gray-300">
-                      <Music2 className="h-5 w-5 text-coral-400 mr-3" />
-                      Descuentos especiales
+                    <li className="flex items-center text-slate-700 dark:text-gray-300">
+                      <Music2 className="h-5 w-5 text-coral-600 dark:text-coral-400 mr-3" /> Descuentos especiales
                     </li>
                   </ul>
                   <Link to="/servicios">
-                    <Button className="w-full bg-coral-500 hover:bg-coral-600 text-black">
-                      Suscribirse Ahora
-                    </Button>
+                    <Button className="w-full bg-coral-500 hover:bg-coral-600 text-black">Suscribirse Ahora</Button>
                   </Link>
                 </div>
               </motion.div>
@@ -278,14 +257,9 @@ export default function Home() {
         {/* Testimonials */}
         <section className="py-20 bg-gradient-to-b from-white to-gray-100 dark:from-black dark:to-gray-900 transition-colors">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-center mb-16"
-            >
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                Lo que dicen nuestros <span className="text-teal-400">artistas</span>
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-900 dark:text-white transition-colors">
+                Lo que dicen nuestros <span className="text-teal-600 dark:text-teal-400">artistas</span>
               </h2>
             </motion.div>
 
@@ -296,17 +270,17 @@ export default function Home() {
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl border border-teal-500/20"
+                  className="bg-gradient-to-br from-gray-100 to-white dark:from-gray-800 dark:to-gray-900 p-6 rounded-2xl border border-teal-500/20 transition-colors"
                 >
                   <div className="flex mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
                     ))}
                   </div>
-                  <p className="text-gray-300 mb-4 italic">"{testimonial.text}"</p>
+                  <p className="mb-4 italic text-slate-700 dark:text-gray-300 transition-colors">"{testimonial.text}"</p>
                   <div>
-                    <p className="text-white font-bold">{testimonial.name}</p>
-                    <p className="text-teal-400 text-sm">{testimonial.band}</p>
+                    <p className="font-bold text-slate-900 dark:text-white transition-colors">{testimonial.name}</p>
+                    <p className="text-sm text-teal-600 dark:text-teal-400">{testimonial.band}</p>
                   </div>
                 </motion.div>
               ))}
@@ -315,27 +289,23 @@ export default function Home() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-gradient-to-b from-white to-gray-100 dark:from-black dark:to-gray-900 transition-colors">
+        <section className="py-20 bg-gradient-to-r from-teal-100 to-coral-100 dark:from-teal-600 dark:to-coral-600 transition-colors">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-900 dark:text-white transition-colors">
                 ¿Listo para grabar tu próximo hit?
               </h2>
-              <p className="text-xl text-white/90 mb-8">
+              <p className="text-xl mb-8 text-slate-700 dark:text-white/90 transition-colors">
                 Únete a cientos de artistas que ya confían en Estudio Altamar
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="/reservar">
-                  <Button size="lg" variant="outline" className="bg-white text-teal-600 hover:bg-gray-100 px-8 py-4 text-lg">
+                  <Button size="lg" variant="outline" className="bg-white text-teal-600 hover:bg-gray-100 dark:hover:bg-gray-200 px-8 py-4 text-lg">
                     Reservar Sesión
                   </Button>
                 </Link>
                 <Link to="/servicios">
-                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-teal-600 px-8 py-4 text-lg">
+                  <Button size="lg" variant="outline" className="border-teal-600 dark:border-white text-teal-600 dark:text-white hover:bg-white hover:text-teal-600 px-8 py-4 text-lg">
                     Ver Planes
                   </Button>
                 </Link>
