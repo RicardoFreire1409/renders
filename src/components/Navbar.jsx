@@ -34,7 +34,23 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-3">
-            <img src="/logo.png" alt="Renders Logo" className="h-20" style={{ width: '120px' }} />
+            import { useTheme } from "next-themes"; // o tu hook de theme
+
+export default function Navbar() {
+  const { theme } = useTheme(); // 'light' o 'dark'
+
+  return (
+    <Link to="/" className="flex items-center space-x-3">
+      <img
+        src={theme === "dark" ? "/logo-light.png" : "/logo-dark.png"}
+        alt="Renders Logo"
+        className="h-20"
+        style={{ width: "120px" }}
+      />
+    </Link>
+  );
+}
+
           </Link>
 
           {/* Desktop Navigation */}
