@@ -17,47 +17,16 @@ export default function Home() {
   };
 
   const features = [
-    {
-      icon: <Mic className="h-8 w-8" />,
-      title: "Grabación Profesional",
-      description: "Equipos de última generación para capturar tu sonido perfecto"
-    },
-    {
-      icon: <Headphones className="h-8 w-8" />,
-      title: "Mezcla y Masterización",
-      description: "Dale el toque final profesional que tu música merece"
-    },
-    {
-      icon: <Users className="h-8 w-8" />,
-      title: "Productor Opcional",
-      description: "Trabaja con nuestros productores expertos cuando lo necesites"
-    },
-    {
-      icon: <Clock className="h-8 w-8" />,
-      title: "Horarios Flexibles",
-      description: "Reserva desde $15/hora o suscríbete por $30/mes"
-    }
+    { icon: <Mic className="h-8 w-8" />, title: "Grabación Profesional", description: "Equipos de última generación para capturar tu sonido perfecto" },
+    { icon: <Headphones className="h-8 w-8" />, title: "Mezcla y Masterización", description: "Dale el toque final profesional que tu música merece" },
+    { icon: <Users className="h-8 w-8" />, title: "Productor Opcional", description: "Trabaja con nuestros productores expertos cuando lo necesites" },
+    { icon: <Clock className="h-8 w-8" />, title: "Horarios Flexibles", description: "Reserva desde $15/hora o suscríbete por $30/mes" }
   ];
 
   const testimonials = [
-    {
-      name: "Carlos Mendoza",
-      band: "Los Navegantes",
-      text: "El mejor estudio de Guayaquil. La calidad es increíble y los precios son justos.",
-      rating: 5
-    },
-    {
-      name: "María González",
-      band: "Solista",
-      text: "Mi primer EP grabado aquí superó todas mis expectativas. ¡Totalmente recomendado!",
-      rating: 5
-    },
-    {
-      name: "Banda Mareas",
-      band: "Rock Alternativo",
-      text: "El ambiente es perfecto para crear. Los productores entienden nuestra visión.",
-      rating: 5
-    }
+    { name: "Carlos Mendoza", band: "Los Navegantes", text: "El mejor estudio de Guayaquil. La calidad es increíble y los precios son justos.", rating: 5 },
+    { name: "María González", band: "Solista", text: "Mi primer EP grabado aquí superó todas mis expectativas. ¡Totalmente recomendado!", rating: 5 },
+    { name: "Banda Mareas", band: "Rock Alternativo", text: "El ambiente es perfecto para crear. Los productores entienden nuestra visión.", rating: 5 }
   ];
 
   return (
@@ -122,44 +91,27 @@ export default function Home() {
                 </Button>
               </div>
 
-              {/* Video Placeholder */}
+              {/* Video (YouTube) */}
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
                 className="relative max-w-4xl mx-auto"
               >
-                <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-teal-500/30">
-                  {/* Video Placeholder */}
-<motion.div
-  initial={{ opacity: 0, scale: 0.9 }}
-  animate={{ opacity: 1, scale: 1 }}
-  transition={{ duration: 0.8, delay: 0.3 }}
-  className="relative max-w-4xl mx-auto"
->
-  <div
-    className="relative rounded-2xl overflow-hidden shadow-2xl border transition-colors"
-    // bordes que cambian con el tema
-    style={{ borderColor: 'rgba(20, 184, 166, 0.3)' }} // teal-500/30
-  >
-    {/* Contenedor responsive 16:9 sin depender de plugins */}
-    <div style={{ position: 'relative', width: '100%', paddingTop: '56.25%' }}>
-      <iframe
-        src="https://www.youtube.com/embed/DwJ3iCROTiQ?rel=0&modestbranding=1&color=white&playsinline=1"
-        title="Tour Estudio - Estudio Altamar"
-        loading="lazy"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowFullScreen
-        className="absolute inset-0 w-full h-full"
-      />
-    </div>
-
-    {/* Overlay suave para mantener el “look” del hero (opcional) */}
-    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent dark:from-black/20" />
-  </div>
-</motion.div>
-
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-teal-500/30 transition-colors">
+                  {/* 16:9 responsive wrapper */}
+                  <div style={{ position: 'relative', width: '100%', paddingTop: '56.25%' }}>
+                    <iframe
+                      src="https://www.youtube.com/embed/DwJ3iCROTiQ?rel=0&modestbranding=1&color=white&playsinline=1"
+                      title="Tour Estudio - Estudio Altamar"
+                      loading="lazy"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                      className="absolute inset-0 w-full h-full"
+                    />
                   </div>
+                  {/* Overlay suave para mantener el look */}
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent dark:from-black/20" />
                 </div>
               </motion.div>
             </motion.div>
