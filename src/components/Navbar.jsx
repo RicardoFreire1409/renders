@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Menu, X, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import ThemeToggle from '@/components/ThemeToggle';
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
@@ -71,6 +72,7 @@ export default function Navbar() {
               {navItems.map(item => <Link key={item.path} to={item.path} onClick={() => setIsOpen(false)} className={`block px-3 py-2 text-base font-medium transition-colors hover:text-teal-400 ${location.pathname === item.path ? 'text-teal-400' : 'text-gray-300'}`}>
                   {item.name}
                 </Link>)}
+              <ThemeToggle />
               <Link to="/perfil" onClick={() => setIsOpen(false)}>
                 <Button variant="outline" size="sm" className="w-full mt-2 border-teal-500 text-teal-400 hover:bg-teal-500 hover:text-black">
                   <User className="h-4 w-4 mr-2" />
