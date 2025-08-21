@@ -146,7 +146,7 @@ export default function Home() {
         </section>
 
         {/* Features Section */}
-        <section className="py-20 bg-gradient-to-b from-black to-gray-900">
+        <section className="py-20 bg-gradient-to-b from-white to-gray-100 dark:from-black dark:to-gray-900 transition-colors">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -183,7 +183,7 @@ export default function Home() {
         </section>
 
         {/* Pricing Preview */}
-        <section className="py-20 bg-gradient-to-b from-gray-900 to-black">
+        <section className="py-20 bg-gradient-to-b from-white to-gray-100 dark:from-black dark:to-gray-900 transition-colors">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -276,7 +276,7 @@ export default function Home() {
         </section>
 
         {/* Testimonials */}
-        <section className="py-20 bg-gradient-to-b from-black to-gray-900">
+        <section className="py-20 bg-gradient-to-b from-white to-gray-100 dark:from-black dark:to-gray-900 transition-colors">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -315,7 +315,7 @@ export default function Home() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-gradient-to-r from-teal-600 to-coral-600">
+        <section className="py-20 bg-gradient-to-b from-white to-gray-100 dark:from-black dark:to-gray-900 transition-colors">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
