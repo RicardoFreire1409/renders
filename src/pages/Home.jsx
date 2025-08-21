@@ -130,18 +130,35 @@ export default function Home() {
                 className="relative max-w-4xl mx-auto"
               >
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-teal-500/30">
-                  <img
-                    className="w-full h-64 md:h-96 object-cover"
-                    alt="Estudio de grabación profesional con equipos modernos"
-                    src="https://images.unsplash.com/photo-1559732277-7453b141e3a1"
-                  />
-                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                    <button
-                      onClick={handleVideoPlay}
-                      className="bg-white/20 backdrop-blur-sm rounded-full p-6 hover:bg-white/30 transition-all"
-                    >
-                      <Play className="h-12 w-12 text-white" />
-                    </button>
+                  {/* Video Placeholder */}
+<motion.div
+  initial={{ opacity: 0, scale: 0.9 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.8, delay: 0.3 }}
+  className="relative max-w-4xl mx-auto"
+>
+  <div
+    className="relative rounded-2xl overflow-hidden shadow-2xl border transition-colors"
+    // bordes que cambian con el tema
+    style={{ borderColor: 'rgba(20, 184, 166, 0.3)' }} // teal-500/30
+  >
+    {/* Contenedor responsive 16:9 sin depender de plugins */}
+    <div style={{ position: 'relative', width: '100%', paddingTop: '56.25%' }}>
+      <iframe
+        src="https://www.youtube.com/embed/DwJ3iCROTiQ?rel=0&modestbranding=1&color=white&playsinline=1"
+        title="Tour Estudio - Estudio Altamar"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+        className="absolute inset-0 w-full h-full"
+      />
+    </div>
+
+    {/* Overlay suave para mantener el “look” del hero (opcional) */}
+    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent dark:from-black/20" />
+  </div>
+</motion.div>
+
                   </div>
                 </div>
               </motion.div>
