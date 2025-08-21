@@ -8,6 +8,22 @@
 		<title>RENDERS</title>
 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4379704162931477"
      crossorigin="anonymous"></script>
+		<script>
+  (function () {
+    const saved = localStorage.getItem('theme'); // 'dark' | 'light' | null
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    // Por tu requerimiento, el default es oscuro
+    const theme = saved ?? (prefersDark ? 'dark' : 'dark');
+
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
 	</head>
 	<body>
 		<div id="root"></div>
